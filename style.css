@@ -1,0 +1,10 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#result{
+    border: solid;
+    border-width: 1px 1px;
+    padding: 2px;
+    
+}

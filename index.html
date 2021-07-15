@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous">
+    </script>
+
+    <title>Estimate App</title>
+</head>
+
+
+<body>
+
+    <h1>Repair Estimate App</h1>
+
+    <form>
+         <p>Shop Rate:</p><input type="text" id="firstNumber" /><br>
+         <p>Labour Time (Hours)</p><input type="text" id="secondNumber" /><br>
+            <input type="button" onClick="multiplyBy()" Value="Multiply" />
+    </form>
+    <div>
+        <p>Labour Cost: <br>
+        <span id = "result"></span>
+        </p>
+    </div>
+
+    
+    
+</body>
+
+
+
+<footer>
+    <script src="/script.js"></script>
+</footer>
+
+</html>
