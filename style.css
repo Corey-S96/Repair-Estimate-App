@@ -8,3 +8,42 @@ body {
     padding: 2px;
     
 }
+
+#mainHeader {
+    text-align: center;
+}
+
+input {
+    font-size: 20px;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 8.5px;
+    border: solid 1px;
+  }
+
+  .main-btn-one {
+      font-size: 22px;
+      margin-top: 25px;
+      margin-bottom: 15px;
+  }
+
+  .labour-Cost {
+    width: 15%;
+    margin: 0 auto;
+    padding: 8.5px;
+    border: solid 1px;
+  }
+
+  #labour-Cost-Label {
+    color: darkblue;
+    font-weight: 700;
+    font-size: 20px;
+    padding: 5px;
+  }
+
+  #result {
+      padding: 5px;
+  }

@@ -21,21 +21,39 @@
 
 
 <body>
-
-    <h1>Repair Estimate App</h1>
-
-    <form>
-         <p>Shop Rate:</p><input type="text" id="firstNumber" /><br>
-         <p>Labour Time (Hours)</p><input type="text" id="secondNumber" /><br>
-            <input type="button" onClick="multiplyBy()" Value="Multiply" />
+    <header id="mainHeader">
+        <h1>Repair Estimate App</h1>
+    </header>
+   
+    <!-- Labour rate multiply by labour hours Section START-->
+    <form class="main-Input">
+         <p>Shop Rate:</p><input type="text" id="firstNumber" placeholder="100.95" /><br>
+         <p>Labour Time (Hours)</p><input type="text" id="secondNumber" placeholder="1.2" /><br>
+            <input class="main-btn-one" type="button" onClick="multiplyBy()" Value="Calculate" />
     </form>
-    <div>
-        <p>Labour Cost: <br>
+    <br>
+
+    <div class="labour-Cost">
+        <p id="labour-Cost-Label">Labour Cost: <br>
         <span id = "result"></span>
         </p>
     </div>
+    <!-- Labour rate multiply by labour hours Section END-->
 
-    
+
+    <!-- parts & Labour to Subtotal Section START-->
+    <form class="main-Input">
+        <p>Parts Cost:</p><input type="text" id="thirdNumber" placeholder="enter price of part(s)" /><br>
+        <p>Labour Cost:</p><input type="text" id="fourthNumber" placeholder="enter labour cost" /><br>
+           <input class="main-btn-one" type="button" onClick="addTogether()" Value="Calculate" />
+   </form>
+
+    <div class="labour-Cost">
+    <p id="labour-Cost-Label">Repair Subtotal: <br>
+    <span id = "result2"></span>
+    </p>
+    </div>
+    <!-- Parts & Labour to Repair Subtotal Section END-->
     
 </body>
 
