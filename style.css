@@ -43,3 +43,7 @@ form {
     font-size: 24px;
     padding: 5px;
   }
+
+  .screenshot-btn {
+      font-size: 22px;
+  }
