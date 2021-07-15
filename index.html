@@ -10,13 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 
-    <script
-        src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-        crossorigin="anonymous">
-    </script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 
     <title>Estimate App</title>
+
 </head>
 
 
@@ -24,36 +21,26 @@
     <header id="mainHeader">
         <h1>Repair Estimate App</h1>
     </header>
-   
+    
     <!-- Labour rate multiply by labour hours Section START-->
     <form class="main-Input">
-         <p>Shop Rate:</p><input type="text" id="firstNumber" placeholder="100.95" /><br>
-         <p>Labour Time (Hours)</p><input type="text" id="secondNumber" placeholder="1.2" /><br>
-            <input class="main-btn-one" type="button" onClick="multiplyBy()" Value="Calculate" />
+        <p>Name of Repair:</p><input type="text" id="repairName" placeholder="Enter name of repair" /><br>
+         <p>Shop Rate/Hour:</p><input type="text" id="firstNumber" placeholder="Enter your shop rate" /><br>
+         <p>Labour Time (Hours)</p><input type="text" id="secondNumber" placeholder="Enter amount of hours" /><br>
+         <p>Parts Cost:</p><input type="text" id="thirdNumber" placeholder="Enter cost of part(s) " /><br>
+            <input class="main-btn-one" type="button" onClick="calculateTotal()" Value="Calculate" />
+
+            <div class="labour-Cost">
+                <p id="labour-Cost-Label">Subtotal: <br>
+                <span id = "result"></span>
+                </p>
+            </div>
+            
+                
+        </div>
+                
     </form>
-    <br>
 
-    <div class="labour-Cost">
-        <p id="labour-Cost-Label">Labour Cost: <br>
-        <span id = "result"></span>
-        </p>
-    </div>
-    <!-- Labour rate multiply by labour hours Section END-->
-
-
-    <!-- parts & Labour to Subtotal Section START-->
-    <form class="main-Input">
-        <p>Parts Cost:</p><input type="text" id="thirdNumber" placeholder="enter price of part(s)" /><br>
-        <p>Labour Cost:</p><input type="text" id="fourthNumber" placeholder="enter labour cost" /><br>
-           <input class="main-btn-one" type="button" onClick="addTogether()" Value="Calculate" />
-   </form>
-
-    <div class="labour-Cost">
-    <p id="labour-Cost-Label">Repair Subtotal: <br>
-    <span id = "result2"></span>
-    </p>
-    </div>
-    <!-- Parts & Labour to Repair Subtotal Section END-->
     
 </body>
 

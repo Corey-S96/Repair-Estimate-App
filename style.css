@@ -2,10 +2,9 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-#result{
-    border: solid;
-    border-width: 1px 1px;
-    padding: 2px;
+#result, #result2{
+    border: solid 1px;
+    padding: 2px 8px;
     
 }
 
@@ -18,7 +17,8 @@ input {
 }
 
 form {
-    width: 50%;
+    width: 30%;
+    min-width: 25%;
     margin: 0 auto;
     padding: 8.5px;
     border: solid 1px;
@@ -31,19 +31,15 @@ form {
   }
 
   .labour-Cost {
-    width: 15%;
     margin: 0 auto;
-    padding: 8.5px;
-    border: solid 1px;
+    width: 15%;
+    padding: 22px;
+
   }
 
   #labour-Cost-Label {
     color: darkblue;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 24px;
     padding: 5px;
-  }
-
-  #result {
-      padding: 5px;
   }
