@@ -20,10 +20,11 @@
 <body>
     <header id="mainHeader">
         <h1>Repair Estimate App</h1>
+        <h2>Alpha v. 1.0</h2>
     </header>
     
-    <!-- Labour rate multiply by labour hours Section START-->
-    <div id="capture">
+    <!-- Screenshotted content START-->
+    <div id="capture"></div>
 
         <form id="main-Input">
             <p>Name of Repair:</p><input type="text" id="repairName" placeholder="Enter name of repair" /><br>
@@ -34,16 +35,17 @@
 
                 <div class="labour-Cost">
                     <p id="labour-Cost-Label">Subtotal: <br>
-                    <span id = "result"></span>
+                    <span id = "result">$</span>
                     </p>
                 </div>
                 
                     
         </form>
+        <div class="container"> <button class="screenshot-btn" onclick="screenShot()">Save Estimate</button></div>
+        
 
-        <button class="screenshot-btn" onclick="screenShot()">Save Estimate</button>
-
-    </div>
+   
+    <!-- Screenshotted content END-->
 
     <script>
         function screenShot(){
@@ -62,6 +64,8 @@
 
 <footer>
     <script src="/script.js"></script>
+
+    <h3 class="footer-text">All rights reserved | C.Schleining</h3>
 </footer>
 
 </html>
