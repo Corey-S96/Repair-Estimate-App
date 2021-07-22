@@ -3,16 +3,15 @@
     padding: 10px;
 }
 
-
-
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(71, 71, 70);
+    background-color: rgb(191, 195, 193);
 }
 
 .labourTimeLink {
   text-align: center;
   font-size: 19px;
+  color: rgb(51, 51, 56);
 }
 
 
@@ -23,25 +22,26 @@ body {
   color: floralwhite;
 }
 .prodemandLink:hover{
-  color: rgb(41, 41, 199);
+  color: blue;
 }
 .prodemandLink:active{
-  color: rgb(41, 41, 199);
+  color: blue;
 }
 
 
 #result {
     padding: 2px 8px;
-    
+    color: rgb(51, 51, 56);
 }
 
 #mainHeader {
     text-align: center;
-    color: floralwhite;
+    color: rgb(51, 51, 56)
 }
 
 input {
     font-size: 20px;
+    font-family: 'Poppins', sans-serif;
     border-radius: 15px;
 }
 
@@ -52,7 +52,7 @@ form {
     border: solid 1px;
     border-radius: 25px;
     box-shadow: 9px 12px #1b1b1b;
-    background: linear-gradient(130deg, rgb(168, 175, 173) 60%, rgb(41, 41, 199) 40%);
+    background: linear-gradient(130deg, rgb(132, 157, 177) 60%, rgb(255, 255, 255) 40%);
   }
 
   .main-btn-one {
@@ -98,13 +98,14 @@ form {
   }
 
   #labour-Cost-Label {
-    color: rgb(255, 255, 255);
+    color: rgb(51, 51, 56);
     font-weight: 700;
     font-size: 24px;
   }
 
   .screenshot-btn {
     font-size: 22px;
+    font-family: 'Poppins', sans-serif;
     margin-top: 25px;
     margin-bottom: 15px;
     position: relative;
@@ -113,7 +114,14 @@ form {
   }
 
   .screenshot-btn:hover{
-      background-color: rgb(26, 103, 155);
+    box-shadow: 6px 10px #1b1b1b;
+    animation-name: shadow;
+    animation-duration: 0.3s;
+  }
+
+  .screenshot-btn:not(:hover) {
+    animation-name: unShadow;
+    animation-duration: 0.5s;
   }
 
   .footer-text {
