@@ -23,7 +23,7 @@
 
     <header id="mainHeader">
         <h1>Repair Estimate App</h1>
-        <h2>Alpha v. 1.0</h2>
+        <h2>Alpha v. 2.0</h2>
     </header>
 
 </head>
@@ -31,18 +31,18 @@
 
 <body>
     
-    <p class="labourTimeLink">Need automotive labour times? Visit<a class="prodemandLink" href="https://www.prodemand.com/" target="_blank">ProDemand</a></p>
+    <p class="labourTimeLink">Need automotive labour times? Visit <a class="prodemandLink" href="https://www.prodemand.com/" target="_blank">ProDemand</a></p>
         <main class="formCopy">
             <form id="main-Input">
-                <p>Name of Repair:</p><input type="text" id="repairName" placeholder="Enter name of repair" /><br>
+                <p>Name of Repair:</p><input type="text" id="repairName" class="repairNameInput" placeholder="Enter name of repair" /><br>
                 <p>Shop Rate/Hour:</p><input type="text" id="firstNumber" placeholder="Enter your shop rate" /><br>
                 <p>Labour Time (Hours)</p><input type="text" id="secondNumber" placeholder="Enter amount of hours" /><br>
                 <p>Parts Cost:</p><input type="text" id="thirdNumber" placeholder="Enter cost of part(s) " /><br>
                     <input class="main-btn-one" type="button" onClick="calculateTotal()" Value="Calculate" />
 
                     <div class="labour-Cost">
-                        <p id="labour-Cost-Label">Subtotal: <br>
-                        <span id = "result">$</span>
+                        <p id="labour-Cost-Label">Subtotal: $
+                        <span id = "result"></span>
                         </p>
                     </div> 
             </form>
@@ -70,7 +70,7 @@
 <footer>
     
 
-    <h3 class="footer-text">All rights reserved | C.Schleining</h3>
+    <h3 class="footer-text">Developed and Designed | C.Schleining 2021</h3>
 </footer>
 
 </html>
