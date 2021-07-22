@@ -10,6 +10,26 @@ body {
     background-color: rgb(71, 71, 70);
 }
 
+.labourTimeLink {
+  text-align: center;
+  font-size: 19px;
+}
+
+
+.prodemandLink {
+  color: floralwhite;
+}
+.prodemandLink:visited{
+  color: floralwhite;
+}
+.prodemandLink:hover{
+  color: rgb(41, 41, 199);
+}
+.prodemandLink:active{
+  color: rgb(41, 41, 199);
+}
+
+
 #result {
     padding: 2px 8px;
     
@@ -98,6 +118,5 @@ form {
 
   .footer-text {
       text-align: right;
-      margin-top: 45px;
       font-size: 16px;
   }
