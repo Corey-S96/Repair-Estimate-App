@@ -20,10 +20,6 @@ body {
     color: floralwhite;
 }
 
-form{
-    background-color: rgb(182, 176, 162);
-}
-
 input {
     font-size: 20px;
     border-radius: 15px;
@@ -35,8 +31,8 @@ form {
     margin: 0 auto;
     border: solid 1px;
     border-radius: 25px;
-    box-shadow: 6px 12px #1b1b1b;
-    background: linear-gradient(145deg, rgb(168, 175, 173) 60%, rgb(26, 103, 155) 40%);
+    box-shadow: 9px 12px #1b1b1b;
+    background: linear-gradient(130deg, rgb(168, 175, 173) 60%, rgb(41, 41, 199) 40%);
   }
 
   .main-btn-one {
@@ -102,5 +98,6 @@ form {
 
   .footer-text {
       text-align: right;
-      margin-top: 65px;
+      margin-top: 45px;
+      font-size: 16px;
   }

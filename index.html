@@ -23,33 +23,32 @@
         <h2>Alpha v. 1.0</h2>
     </header>
     
-    <!-- Screenshotted content START-->
-    <div id="capture"></div>
 
-        <form id="main-Input">
-            <p>Name of Repair:</p><input type="text" id="repairName" placeholder="Enter name of repair" /><br>
-            <p>Shop Rate/Hour:</p><input type="text" id="firstNumber" placeholder="Enter your shop rate" /><br>
-            <p>Labour Time (Hours)</p><input type="text" id="secondNumber" placeholder="Enter amount of hours" /><br>
-            <p>Parts Cost:</p><input type="text" id="thirdNumber" placeholder="Enter cost of part(s) " /><br>
-                <input class="main-btn-one" type="button" onClick="calculateTotal()" Value="Calculate" />
+    <!-- <div id="capture"></div> -->
+        <main class="formCopy">
+            <form id="main-Input">
+                <p>Name of Repair:</p><input type="text" id="repairName" placeholder="Enter name of repair" /><br>
+                <p>Shop Rate/Hour:</p><input type="text" id="firstNumber" placeholder="Enter your shop rate" /><br>
+                <p>Labour Time (Hours)</p><input type="text" id="secondNumber" placeholder="Enter amount of hours" /><br>
+                <p>Parts Cost:</p><input type="text" id="thirdNumber" placeholder="Enter cost of part(s) " /><br>
+                    <input class="main-btn-one" type="button" onClick="calculateTotal()" Value="Calculate" />
 
-                <div class="labour-Cost">
-                    <p id="labour-Cost-Label">Subtotal: <br>
-                    <span id = "result">$</span>
-                    </p>
-                </div>
-                
-                    
-        </form>
-        <div class="container"> <button class="screenshot-btn" onclick="screenShot()">Save Estimate</button></div>
+                    <div class="labour-Cost">
+                        <p id="labour-Cost-Label">Subtotal: <br>
+                        <span id = "result">$</span>
+                        </p>
+                    </div> 
+            </form>
+        </main>
+        <button class="screenshot-btn" onclick="screenShot()">Save Estimate</button>
         
 
    
-    <!-- Screenshotted content END-->
+   
 
     <script>
         function screenShot(){
-            html2canvas(document.body).then(function(canvas) {
+            html2canvas(document.getElementsByClassName('formCopy')).then(function(canvas) {
             document.body.appendChild(canvas);
         
         });
