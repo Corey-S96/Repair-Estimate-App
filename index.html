@@ -32,6 +32,7 @@
 <body>
     
     <p class="labourTimeLink">Need automotive labour times? Visit <a class="prodemandLink" href="https://www.prodemand.com/" target="_blank">ProDemand</a></p>
+        <button class="screenshot-btn" onclick="screenShot()">Save Estimate</button>
         <main class="formCopy">
             <form id="main-Input">
                 <p>Name of Repair:</p><input type="text" id="repairName" class="repairNameInput" placeholder="Enter name of repair" autocomplete="off" /><br>
@@ -39,6 +40,7 @@
                 <p>Labour Time (Hours)</p><input type="text" id="secondNumber" placeholder="Enter amount of hours" autocomplete="off" /><br>
                 <p>Parts Cost:</p><input type="text" id="thirdNumber" placeholder="Enter cost of part(s)" autocomplete="off" /><br>
                     <input class="main-btn-one" type="button" onClick="calculateTotal()" Value="Calculate" autocomplete="off" />
+                    <button class="clear-btn" onclick="document.getElementById('repairName firstNumber secondNumber thirdNumber ').value = ''">Clear</button>
 
                     <div class="labour-Cost">
                         <p id="labour-Cost-Label">Subtotal: $
@@ -47,13 +49,9 @@
                     </div> 
             </form>
         </main>
-        <button class="screenshot-btn" onclick="screenShot()">Save Estimate</button>
-        
         
 
-   
-   
-
+        
     <script>
         function screenShot(){
             html2canvas(document.getElementsByClassName('formCopy')).then(function(canvas) {

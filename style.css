@@ -104,8 +104,9 @@ form {
     font-family: 'Poppins', sans-serif;
     margin-top: 25px;
     margin-bottom: 15px;
-    position: relative;
-    left: 31.5%;
+    position: relative; 
+    left: 50%;
+    transform: translateX(-50%);
     border-radius: 15px;
   }
 
@@ -116,6 +117,26 @@ form {
   }
 
   .screenshot-btn:not(:hover) {
+    animation-name: unShadow;
+    animation-duration: 0.5s;
+  }
+
+  .clear-btn {
+    font-size: 22px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    border-radius: 25px;
+    position: relative; 
+    left: 10%;
+  }
+
+  .clear-btn:hover {
+    box-shadow: 6px 10px #1b1b1b;
+    animation-name: shadow;
+    animation-duration: 0.3s;
+  }
+
+  .clear-btn:not(:hover) {
     animation-name: unShadow;
     animation-duration: 0.5s;
   }
